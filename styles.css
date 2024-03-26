@@ -1,0 +1,77 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+}
+.image-titulo {
+    margin-left: 250px;
+    position: absolute;
+    z-index: 1;
+}
+.image-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+    margin-left: 100px;
+    background-image: url('background.png'); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.panel_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; 
+    height: 95.6%;
+    background-image: url("panel.png"); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: white; 
+    padding: 20px; 
+}
+
+.panel_background td a {
+    
+color: red;
+text-decoration: none;
+font-weight: bold;
+}
+
+.panel_background td a:hover {
+    
+    color: rgb(238, 197, 109);
+    text-decoration: none;
+    font-weight: bold;
+    filter: brightness(180%);
+    }
+
+#torch {
+    margin-bottom: 10px;
+}
+
+.panel_background ul li {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.panel_background ul li a {
+    color: red;
+    text-decoration: none;
+    display: block;
+}
+
+
+#parca{
+    margin-left: 35px;
+    margin-bottom: 50px;
+}
