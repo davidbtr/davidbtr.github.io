@@ -12,14 +12,15 @@ body, html {
 .image-titulo {
     margin-left: 250px;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 .image-background {
+    z-index: 1;
     position: absolute;
     top: 0;
     left: 0;
-    width: 70%;
-    height: 100%;
+    width: 65%;
+    height: 95.7%;
     padding: 20px;
     margin-left: 100px;
     background-image: url('background.png'); 
@@ -27,7 +28,9 @@ body, html {
     background-size: cover; 
 }
 
+
 .panel_background {
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -74,4 +77,19 @@ font-weight: bold;
 #parca{
     margin-left: 35px;
     margin-bottom: 50px;
+}
+
+.right-tower {
+    z-index: 0;
+    position:fixed;
+    margin-left: 1382px;
+    bottom: -10px;
+
+}
+
+.separator {
+    z-index: 3;
+    position:fixed;
+    margin-left: 1372px;
+    top: 0;
 }
