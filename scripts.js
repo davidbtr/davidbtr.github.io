@@ -6,9 +6,45 @@ function reproducirMP3() {
 function playSound() {
     var sound = document.getElementById("hoverSound");
     if (!sound.paused) {
-        sound.pause(); // Pausar el sonido actual
-        sound.currentTime = 0; // Reiniciar el sonido actual
+        sound.pause(); 
+        sound.currentTime = 0; 
     }
     sound.play();
 }
-document.getElementById('parca').addEventListener('click', reproducirMP3);
+function door(){
+
+
+    let contadorClics = 0;
+    let tiempoUltimoClic = 0;
+    let esperaRedireccion;
+    
+    function resetearContador() {
+        contadorClics = 0;
+        tiempoUltimoClic = 0;
+    }
+    
+    const sound = document.getElementById("clickSound");
+    const imagen = document.getElementById("door");
+    sound.currentTime = 0;
+    sound.play();
+    imagen.addEventListener("click", function() {
+        const tiempoActual = new Date().getTime();
+        
+        if (tiempoActual - tiempoUltimoClic < 5000) { 
+            contadorClics++;
+            if (contadorClics === 2) {
+                clearTimeout(esperaRedireccion);
+                esperaRedireccion = setTimeout(() => {
+                    window.location.href = "file:///C:/Users/David/Desktop/elparca.com/door.html"; // Redirige después de 1 segundo
+                }, 100);
+            } else {
+                clearTimeout(esperaRedireccion);
+            }
+        } else {
+            resetearContador(); 
+            clearTimeout(esperaRedireccion);
+        }
+        
+        tiempoUltimoClic = tiempoActual;
+    });
+}
