@@ -80,6 +80,7 @@ font-weight: bold;
 }
 
 .right-tower {
+    
     z-index: 0;
     position:fixed;
     margin-left: 1382px;
@@ -87,9 +88,30 @@ font-weight: bold;
 
 }
 
+#tombstone{
+    z-index: 1;
+    position:fixed;
+    width: 210px;
+    height: 280px;
+    margin-left: 5px;
+    margin-top: 225px
+    
+}
+#tombstone:hover{
+    filter: brightness(140%);
+}
 .separator {
     z-index: 3;
     position:fixed;
     margin-left: 1372px;
     top: 0;
+}
+
+#door{
+    cursor:grabbing;
+    z-index: 3;
+    position:fixed;
+    margin-left: 260px;
+    margin-top: 145px
+    
 }
