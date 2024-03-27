@@ -32,7 +32,7 @@ function door(){
                 clearTimeout(esperaRedireccion);
                 esperaRedireccion = setTimeout(() => {
                     window.location.href = "https://elparca.com/door.html";
-                }, 100);
+                }, 200);
             } else {
                 clearTimeout(esperaRedireccion);
             }
