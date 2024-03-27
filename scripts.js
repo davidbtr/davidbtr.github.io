@@ -31,7 +31,7 @@ function door(){
             if (contadorClics === 2) {
                 clearTimeout(esperaRedireccion);
                 esperaRedireccion = setTimeout(() => {
-                    window.location.href = "file:///C:/Users/David/Desktop/elparca.com/door.html";
+                    window.location.href = "https://elparca.com/door.html";
                 }, 100);
             } else {
                 clearTimeout(esperaRedireccion);
