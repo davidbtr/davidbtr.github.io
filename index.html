@@ -8,27 +8,24 @@
     </div>
     <link rel="stylesheet" href="styles.css">
 <body>
+
     <div class="container">
         
-        <div class="image-background"></div>
+        <div class="background"></div>
         <img src="background.png" width="130px" id="parca">
+
+        <img src="panel.png" id="panel">
+
         <div class="panel_background">
             
-                <img src="parca.gif" width="130px" id="parca">
-                <table>
-                <tr>
-                    <td><img src="torch.gif" width="50px" id="torch"></td>
-                    <td><a href='file:///C:/Users/David/Desktop/elparca.com/main.html' onmouseover="playSound()">H o m e</a></li>
-                </tr>
-                <tr>
-                    <td><img src="torch.gif" width="50px" id="torch"></td>
-                    <td><a href="file:///C:/Users/David/Desktop/elparca.com/main.html"  onmouseover="playSound()">G r i e f s</a></li>
-                </tr>
-                <tr>
-                    <td><img src="torch.gif" width="50px" id="torch"></td>
-                    <td><a href="file:///C:/Users/David/Desktop/elparca.com/main.html" onmouseover="playSound()">E x t r a</a></li>
-                </tr>
-                </table>
+                    <img src="parca.gif" id="parca">
+                    <img src="torch.gif" id="torch1">
+                    <a href='file:///C:/Users/David/Desktop/elparca.com/main.html'id="panel_text" onmouseover="playSound()">H o m e</a>
+                    <img src="torch.gif" id="torch2">
+                    <a href="file:///C:/Users/David/Desktop/elparca.com/main.html" id="panel_text" onmouseover="playSound()">G r i e f s</a>
+                    <img src="torch.gif" id="torch3">
+                    <a href="file:///C:/Users/David/Desktop/elparca.com/main.html" id="panel_text" onmouseover="playSound()">E x t r a</a>
+                
 
                 <audio id="hoverSound">
                     <source src="select.mp3" type="audio/mpeg">
@@ -42,15 +39,13 @@
         </div>
         <div class = "right-tower">
             <audio id="clickSound" src="toc.mp3"></audio>
-            <img src="click.png" width="20px" height="40px" id="door" alt="Puerta" onmousedown="door()">
 
             <img src="tombstone.png" width ="600px" height="500px" id="tombstone">
             <img src="tower.gif" width ="600px" height="500px">
 
         </div>
-
         <div class ="door_tower">
-            
+            <img src="click.png" id="door" onmousedown="door()">
         </div>
     </div>
 </body>
