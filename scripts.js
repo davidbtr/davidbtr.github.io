@@ -1,7 +1,12 @@
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    window.location.href = "door.html";
+}
+
 function reproducirMP3() {
     var audio = new Audio('laugh.mp3');
     audio.play();
 }
+
 function playSound() {
     var sound = document.getElementById("hoverSound");
     if (!sound.paused) {
@@ -11,6 +16,8 @@ function playSound() {
     sound.play();
 }
 function door(){
+
+
     let contadorClics = 0;
     let tiempoUltimoClic = 0;
     let esperaRedireccion;
@@ -26,13 +33,14 @@ function door(){
     sound.play();
     imagen.addEventListener("click", function() {
         const tiempoActual = new Date().getTime();
+        
         if (tiempoActual - tiempoUltimoClic < 5000) { 
             contadorClics++;
             if (contadorClics === 2) {
                 clearTimeout(esperaRedireccion);
                 esperaRedireccion = setTimeout(() => {
-                    window.location.href = "https://elparca.com/door.html";
-                }, 400);
+                    window.location.href = "file:///C:/Users/David/Desktop/elparca.com/door.html";
+                }, 100);
             } else {
                 clearTimeout(esperaRedireccion);
             }
