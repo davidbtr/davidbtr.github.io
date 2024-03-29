@@ -1,7 +1,6 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    width: 100%;
+    height: 100%;   
     background-color: black;
 }
 
@@ -9,48 +8,274 @@ body, html {
     position: relative;
     height: 100%;
 }
-.image-titulo {
-    margin-left: 250px;
+.image-titulo img {
+    margin-left: 13%;
+    width: 21%;
+    height: 11%;
     position: absolute;
     z-index: 2;
 }
-.image-background {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 65%;
-    height: 95.7%;
-    padding: 20px;
-    margin-left: 100px;
-    background-image: url('background.png'); 
-    background-repeat: no-repeat;
-    background-size: cover; 
-}
 
 
-.panel_background {
-    z-index: 1;
+#panel {
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
-    width: 200px; 
-    height: 95.6%;
-    background-image: url("panel.png"); 
-    background-repeat: no-repeat;
-    background-size: cover; 
-    color: white; 
-    padding: 20px; 
+    width: 12.5%; 
+    height: 100%;
 }
 
-.panel_background td a {
+@media screen and (min-width: 1920px) {
+
+    .background {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 64%;
+        height: 93%;
+        padding: 1.5%;
+        margin-left: 5.75%;
+        background-image: url('background.png'); 
+        background-size: cover; 
+    }
+
+    .image-titulo img {
+    width: 21%;
+    height: 11%;
+    margin-left: 12%;
+    }
+    #panel {
+        width: 14%; 
+    }
+    .panel_background a {
+        margin-left: 10%;
+        margin-top: 12%;
+        margin-bottom: 5%;
+    }
+    #torch1 {
+        width: 12%;
+        margin-left: -32%;
+        margin-top: 35%;
+        position: absolute;
+    }
+
+    #torch2 {
+        width: 12%;
+        margin-left: -1%;
+        margin-top: 1%;
+        position: absolute;
+    }
+
+    #torch3 {
+        width: 12%;
+        margin-left: -1%;
+        margin-top: 1%;
+        position: absolute;
+    }
+
+    #panel_text {
+        font-size: 16px;
+    }
+
+    #parca {
+    height: 17.5%;
+    width: 25%;
+    margin-left: 6%;
+    margin-top: 2%;
+    }
+
+    .right-tower {
     
-color: red;
-text-decoration: none;
-font-weight: bold;
+        z-index: 0;
+        position:fixed;
+        margin-left: 72.5%;
+        bottom: -0.5%;
+    
+    }
 }
 
-.panel_background td a:hover {
+
+@media screen and (max-width: 1919px) and (min-width: 768px) {
+
+    .background {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 96%;
+        padding: 1.5%;
+        margin-left: -11%;
+        background-image: url('background.png'); 
+        background-size: cover; 
+    }
+
+    .image-titulo img {
+    width: 31%;
+    height: 11%;
+    margin-left: 17%;
+    }
+    #panel {
+        width: 20%; 
+    }
+
+    .panel_background a {
+        margin-left: 10%;
+        margin-top: 12%;
+        margin-bottom: 5%;
+    }
+    #torch1 {
+        width: 12%;
+        margin-left: -32%;
+        margin-top: 36%;
+        position: absolute;
+    }
+
+    #torch2 {
+        width: 12%;
+        margin-left: -1%;
+        margin-top: 1%;
+        position: absolute;
+    }
+
+    #torch3 {
+        width: 12%;
+        margin-left: -1%;
+        margin-top: 1%;
+        position: absolute;
+    }
+    
+    #panel_text {
+        font-size: 16px;
+    }
+
+    #parca {
+        height: 17.5%;
+        width: 26%;
+        margin-left: 5%;
+        margin-top: 2%;
+        }
+
+    .separator img{
+        position:fixed;
+        margin-left:-1.5%;
+    }
+    .right-tower img {
+            width: 35%;
+            height: 50%;
+            z-index: 0;
+            position:fixed;
+            margin-left: 71.5%;
+            bottom: -0.5%;
+        
+    }
+
+    #door{
+        width: 2%;
+        height: 2%;
+        margin-bottom: 0%;
+        margin-left: 51%;
+        position:fixed;
+     }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .background {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 96%;
+        padding: 1.5%;
+        margin-left: -11%;
+        background-image: url('background.png'); 
+        background-size: cover; 
+    }
+
+    .image-titulo img {
+        width: 36%;
+        height: 14%;
+        margin-left: 24%;
+        margin-top: -2%;
+    }
+    #panel {
+        width: 30%;
+        margin-left: -2%;
+    }
+
+    .panel_background a {
+        margin-left: 10%;
+        margin-top: 12%;
+        margin-bottom: 5%;
+    }
+    #torch1 {
+        width: 12%;
+        margin-left: -23%;
+        margin-top: 29%;
+        position: absolute;
+    }
+
+    #torch2 {
+        width: 12%;
+        margin-left: -1%;
+        margin-top: 1%;
+        position: absolute;
+    }
+
+    #torch3 {
+        width: 12%;
+        margin-left: -1%;
+        margin-top: 1%;
+        position: absolute;
+    }
+
+    #panel_text {
+        font-size: 13px;
+    }
+
+    #parca {
+        height: 17.5%;
+        width: 19%;
+        margin-left: 3%;
+        margin-top: 2%;
+        }
+
+    .separator img{
+        position:fixed;
+        margin-left:-1.5%;
+     }
+    .right-tower img {
+        width: 35%;
+        height: 50%;
+         z-index: 0;
+          position:fixed;
+           margin-left: 71.5%;
+           bottom: -0.5%;
+            
+     }
+
+}
+
+.panel_background {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.panel_background a {
+    
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.panel_background a:hover {
     
     color: rgb(238, 197, 109);
     text-decoration: none;
@@ -58,43 +283,29 @@ font-weight: bold;
     filter: brightness(180%);
     }
 
+
 #torch {
     margin-bottom: 10px;
 }
 
-.panel_background ul li {
+.panel_background  {
     margin-top: 10px;
     margin-left: 10px;
 }
 
-.panel_background ul li a {
+.panel_background a {
     color: red;
     text-decoration: none;
     display: block;
 }
 
-
-#parca{
-    margin-left: 35px;
-    margin-bottom: 50px;
-}
-
-.right-tower {
-    
-    z-index: 0;
-    position:fixed;
-    margin-left: 1382px;
-    bottom: -10px;
-
-}
-
 #tombstone{
     z-index: 1;
     position:fixed;
-    width: 210px;
-    height: 280px;
-    margin-left: 5px;
-    margin-top: 225px
+    width: 11%;
+    height:30.5%;
+    margin-left: 0.3%;
+    margin-top: 11.5%;
     
 }
 #tombstone:hover{
@@ -103,7 +314,7 @@ font-weight: bold;
 .separator {
     z-index: 3;
     position:fixed;
-    margin-left: 1372px;
+    margin-left: 72.5%;
     top: 0;
 }
 
