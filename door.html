@@ -1,52 +1,60 @@
 <!DOCTYPE html>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <div class="image-titulo">
-        <title>elparca.com</title>
-        <img src="title.gif">
-    </div>
-    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
 <body>
+    <img src="door_closed.png" id="door_closed" onclick="desaparecer()">
+    <img src="door.gif" id="door">
+    
 
-    <div class="container">
+    <script>
         
-        <div class="background"></div>
-        <img src="background.png" width="130px" id="parca">
+        function desaparecer() {
+        var audio = new Audio('door_open.mp3');
+        audio.play();
 
-        <img src="panel.png" id="panel">
+        setTimeout(function() {
+        document.getElementById('door_closed').style.display = 'none';
+        document.getElementById('door').src = 'door.gif';
+        setTimeout(function() {
+          window.location.href = 'file:///C:/Users/David/Desktop/elparca.com/main.html'; 
+        }, 1400); 
+      }, 100); 
+        }
 
-        <div class="panel_background">
+        
+    
+      </script>
+
+      <style>
+        body{
+          
+          background-image: url('door_background.png'); 
+         margin: 0; 
+        height: 100vh;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        }
+        #door{
+           position: absolute;
+            max-width: 100%;
+            max-height: 100%;
             
-                    <img src="parca.gif" id="parca">
-                    <img src="torch.gif" id="torch1">
-                    <a href='file:///C:/Users/David/Desktop/elparca.com/main.html'id="panel_text" onmouseover="playSound()">H o m e</a>
-                    <img src="torch.gif" id="torch2">
-                    <a href="file:///C:/Users/David/Desktop/elparca.com/main.html" id="panel_text" onmouseover="playSound()">G r i e f s</a>
-                    <img src="torch.gif" id="torch3">
-                    <a href="file:///C:/Users/David/Desktop/elparca.com/main.html" id="panel_text" onmouseover="playSound()">E x t r a</a>
-                
+        }
 
-                <audio id="hoverSound">
-                    <source src="select.mp3" type="audio/mpeg">
-                  </audio>
-                <script src="scripts.js"></script>
+        #door, #door_closed {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+        }
 
-        </div>
-
-        <div class = "separator">
-            <img src="background_panel.png" width="20px" height="1000px">
-        </div>
-        <div class = "right-tower">
-            <audio id="clickSound" src="toc.mp3"></audio>
-
-            <img src="tombstone.png" width ="600px" height="500px" id="tombstone">
-            <img src="tower.gif" width ="600px" height="500px">
-
-        </div>
-        <div class ="door_tower">
-            <img src="click.png" id="door" onmousedown="door()">
-        </div>
-    </div>
+        #door_closed{
+            z-index: 1;
+            cursor: grabbing;
+        }
+      </style>
 </body>
 </html>
