@@ -53,6 +53,7 @@ body, html {
         margin-left: 10%;
         margin-top: 12%;
         margin-bottom: 5%;
+        width: 12%;
     }
     #torch1 {
         width: 12%;
@@ -87,11 +88,26 @@ body, html {
     }
 
     .right-tower {
-    
         z-index: 0;
-        position:fixed;
+        position:absolute;
         margin-left: 72.5%;
         bottom: -0.5%;
+    
+    }
+
+    .right-tower #door {
+        width: 3%;
+        height: 9%;
+        margin-left:43.8% ;
+        bottom: 63%;
+    
+    }
+
+    .right-tower #tombstone {
+        width: 34.5%;
+        height: 55%;
+        margin-left:1% ;
+        bottom: 0.5%;
     
     }
 }
@@ -125,9 +141,10 @@ body, html {
         margin-left: 10%;
         margin-top: 12%;
         margin-bottom: 5%;
+        width: 12%;
     }
     #torch1 {
-        width: 12%;
+        width: 11%;
         margin-left: -32%;
         margin-top: 36%;
         position: absolute;
@@ -166,19 +183,27 @@ body, html {
             width: 35%;
             height: 50%;
             z-index: 0;
-            position:fixed;
+            position:absolute;
             margin-left: 71.5%;
             bottom: -0.5%;
         
     }
 
-    #door{
-        width: 2%;
-        height: 2%;
-        margin-bottom: 0%;
-        margin-left: 51%;
-        position:fixed;
-     }
+    .right-tower #door {
+        width: 0.9%;
+        height: 5%;
+        margin-left:87% ;
+        bottom: 30%;
+    
+    }
+
+    .right-tower #tombstone {
+        width: 12.5%;
+        height: 27.5%;
+        margin-left:71.8% ;
+        bottom: -0.3%;
+    
+    }
 }
 
 
@@ -212,6 +237,7 @@ body, html {
         margin-left: 10%;
         margin-top: 12%;
         margin-bottom: 5%;
+        width: 10%;
     }
     #torch1 {
         width: 12%;
@@ -253,11 +279,27 @@ body, html {
         width: 35%;
         height: 50%;
          z-index: 0;
-          position:fixed;
+          position:absolute;
            margin-left: 71.5%;
            bottom: -0.5%;
             
      }
+
+     .right-tower #door {
+        width: 0.9%;
+        height: 5%;
+        margin-left:87% ;
+        bottom: 30%;
+    
+    }
+ 
+    .right-tower #tombstone {
+        width: 12%;
+        height: 27%;
+        margin-left:72% ;
+        bottom: 0%;
+    
+    }
 
 }
 
@@ -288,20 +330,14 @@ body, html {
     margin-bottom: 10px;
 }
 
-.panel_background  {
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
 .panel_background a {
     color: red;
-    text-decoration: none;
     display: block;
 }
 
 #tombstone{
     z-index: 1;
-    position:fixed;
+    position:absolute;
     width: 11%;
     height:30.5%;
     margin-left: 0.3%;
@@ -321,7 +357,7 @@ body, html {
 #door{
     cursor:grabbing;
     z-index: 3;
-    position:fixed;
+    position:absolute;
     margin-left: 260px;
     margin-top: 145px
     
